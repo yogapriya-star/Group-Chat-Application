@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import Modal from './Modal';
 
 function Chat() {
-    const backEndUrl = 'http://localhost:8000/';
+    const backEndUrl = 'https://group-chat-app-w9tq.onrender.com/';
 
     const [user, setUser] = useState("");
     const [room, setRoom] = useState("");
@@ -31,7 +31,7 @@ function Chat() {
 
         // Check if name or room is empty
         if (!name || !room) {
-            window.location.href = 'http://localhost:3000/';
+            window.location.href = '/';
             return; // Return to prevent further execution of the hook
         }
 
@@ -45,7 +45,7 @@ function Chat() {
                     confirmButtonText: 'OK',
                 }).then(() => {
                     // Redirect user to a page
-                    window.location.href = 'http://localhost:3000/'; // Replace with your desired URL
+                    window.location.href = '/'; // Replace with your desired URL
                 });
             }
         });
@@ -118,10 +118,10 @@ function Chat() {
     };
 
     const handleLeaveChat = () => {
-        // Close the current window and redirect to http://localhost:3000/
+        // Close the current window and redirect it
         window.close();
         clearSession();
-        window.location.href = 'http://localhost:3000/';
+        window.location.href = '/';
     };
 
     return (
