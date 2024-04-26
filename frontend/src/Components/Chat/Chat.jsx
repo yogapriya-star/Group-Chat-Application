@@ -31,7 +31,7 @@ function Chat() {
 
         // Check if name or room is empty
         if (!name || !room) {
-            window.location.href = '/';
+            window.location.href = 'https://group-chat-application-slxw.onrender.com';
             return; // Return to prevent further execution of the hook
         }
 
@@ -45,7 +45,7 @@ function Chat() {
                     confirmButtonText: 'OK',
                 }).then(() => {
                     // Redirect user to a page
-                    window.location.href = '/'; // Replace with your desired URL
+                    window.location.href = 'https://group-chat-application-slxw.onrender.com'; // Replace with your desired URL
                 });
             }
         });
@@ -121,7 +121,7 @@ function Chat() {
         // Close the current window and redirect it
         window.close();
         clearSession();
-        window.location.href = '/';
+        window.location.href = 'https://group-chat-application-slxw.onrender.com';
     };
 
     return (
