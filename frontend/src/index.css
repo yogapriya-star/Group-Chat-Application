@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.badge {
+    background-color: #8854db;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 4px; /* Adjust padding to reduce tooltip size */
+    position: absolute;
+    top: 16px; /* Adjust this value to reduce space between user text and tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 10px; /* Adjust font size */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.chat-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.chat-status {
+    color: green;
+    font-size: 12px;
+}
+
+.chat-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+
+.underline {
+    text-decoration: underline;
+    display: inline-block;
+}
