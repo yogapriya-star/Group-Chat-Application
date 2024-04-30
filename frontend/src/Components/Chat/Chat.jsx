@@ -171,7 +171,7 @@ function Chat() {
                             ! <span className="badge hidden sm:inline">Chat Room : {room}</span>
                         </p>
                         <div className="flex space-x-4">
-                            <button onClick={handleLeaveChat} className="text-white text-sm lg:text-lg bg-red-500 py-2 px-4 lg:px-6 rounded-lg">Cancel Chat</button>
+                            <button onClick={handleLeaveChat} className="text-white text-sm lg:text-lg bg-red-500 py-2 px-4 lg:px-6 rounded-lg">Exit Room</button>
                         </div>
                     </div>
                     <div className="w-full bg-gray-200 rounded-b-lg">
