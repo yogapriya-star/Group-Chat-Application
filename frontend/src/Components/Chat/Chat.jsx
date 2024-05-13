@@ -179,17 +179,17 @@ function Chat() {
                             <div className="flex flex-col space-y-2 overflow-y-auto max-h-[300px]" id="chat_body">
                                 {
                                     messages.map((e, i) => (e.user === user?.toLowerCase() ?
-                                        <div key={i} className="flex items-start">
-                                            <div className="bg-gray-300 rounded-lg p-3">
-                                                <p className="text-sm lg:text-lg">{e.text}</p>
-                                                <p className="text-xs text-gray-500 text-right">{e.user}</p>
-                                            </div>
-                                        </div>
-                                        :
                                         <div className="flex items-end justify-end" key={i}>
                                             <div className="bg-blue-500 rounded-lg p-3">
                                                 <p className="text-white text-sm lg:text-lg">{e.text}</p>
                                                 <p className="text-xs text-black text-right">{e.user}</p>
+                                            </div>
+                                        </div>
+                                        :
+                                        <div key={i} className="flex items-start">
+                                            <div className="bg-gray-300 rounded-lg p-3">
+                                                <p className="text-sm lg:text-lg">{e.text}</p>
+                                                <p className="text-xs text-gray-500 text-right">{e.user}</p>
                                             </div>
                                         </div>
                                     ))
